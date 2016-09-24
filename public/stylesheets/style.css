@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url('../fonts/GothamRounded-Book/GothamRnd-Book.otf') format('opentype');
+}
+
+body, input, textarea {
+  font: 14px 'GothamRounded-Book', Helvetica, Arial, sans-serif;
+  line-height: 1.42857143;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bs-docs-section {
+    margin-bottom: 20px;
+}
+
+.input-group-addon {
+  width: 80px;
+}
+
+.toggle.btn {
+  border-radius: 0 4px 4px 0;
+}

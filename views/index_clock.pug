@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	.container.well
+		.row
+			.form-group.col-xs-6
+				h2 Inomhus #1
+		.row
+			.form-group.label-floating.is-empty.col-xs-4
+				input#wakeup1.timepicker.form-control(type="text")
+				label.control-label(for="wakeup1") Wake up #1
+			.form-group.label-floating.is-empty.col-xs-4
+				input#gotobed1.timepicker.form-control(type="text")
+				label.control-label(for="gotobed1") Go to bed #1

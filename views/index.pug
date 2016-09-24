@@ -1,0 +1,51 @@
+﻿extends layout
+
+block content
+  .row.house(id = id)
+    .col-md-9.main
+      .bs-docs-section
+        h1.page-header #{title}
+        p.lead= house.positionString
+        p.lead= house.sunTimesString
+        p.lead= house.code
+        //p.lead Welcome to #{title}
+        //.input-group
+        //  span.input-group-addon
+        //    input(type="checkbox")
+        //  input.form-control(type="text", value="Hello")
+      //.bs-docs-section
+      //  .btn-group(data-toggle="buttons")
+      //    label.btn.btn-primary 
+      //      input(type="checkbox", autocomplete="off")
+      //      | 1
+      //    label.btn.btn-primary 
+      //      input(type="checkbox", autocomplete="off")
+      //      | 2
+      //    label.btn.btn-primary 
+      //      input(type="checkbox", autocomplete="off")
+      //      | 3
+      .bs-docs-section
+        .input-group
+          span.input-group-addon
+            b Inne 1
+          input#indoor-btn.control-checkbox(type="checkbox", checked=house.indoor, data-toggle="toggle", data-width="80" data-height="35" data-onstyle="warning")
+      .bs-docs-section
+        .input-group
+          span.input-group-addon 
+            b Ute 2
+          input#outdoor-btn.control-checkbox(type="checkbox", checked=house.outdoor, data-toggle="toggle", data-width="80" data-height="35" data-onstyle="warning")
+      .bs-docs-section
+        .input-group
+          span.input-group-addon 
+            b Slump 3
+          input#random-btn.control-checkbox(type="checkbox", checked=house.random, data-toggle="toggle", data-width="80" data-height="35" data-onstyle="warning")
+      .bs-docs-section
+        .input-group
+          span.input-group-addon 
+            b Test
+          input#test-btn.control-checkbox(type="checkbox", checked=house.test, data-toggle="toggle", data-width="80" data-height="35" data-onstyle="warning")
+      .bs-docs-section
+        .input-group
+          span.input-group-addon 
+            b Auto
+          input#auto-btn.control-checkbox(type="checkbox", checked=house.auto, data-toggle="toggle", data-width="80" data-height="35" data-onstyle="warning")

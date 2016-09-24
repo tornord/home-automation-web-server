@@ -1,0 +1,26 @@
+{
+  "name": "test160912",
+  "description": "",
+  "main": "",
+  "authors": [
+    "tornord <tornord@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "directory": "public/components/",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "jstat": "^1.5.3",
+    "d3": "^4.2.3",
+    "lodash": "^4.15.0",
+    "bootstrap-toggle": "^2.2.2"
+  }
+}

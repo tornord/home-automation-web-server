@@ -1,5 +1,5 @@
 "use strict";
-require("./daycount");
+require("daycount");
 var SunCalc = require("./suncalc.js");
 var lamp_1 = require("./lamp");
 var House = (function () {

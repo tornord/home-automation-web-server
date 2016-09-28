@@ -1,5 +1,5 @@
 "use strict";
-require("./daycount");
+require("daycount");
 var SunCalc = require("./suncalc");
 var Lamp = (function () {
     function Lamp(house, unit, wakeUp, goToBed, weekendWakeUp, weekendGoToBed, lat, lon, deg) {

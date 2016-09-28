@@ -67,7 +67,7 @@ app.use('/controls', function (req, res) {
         format = req.query.format;
     //console.log("test = " + house.test + ", auto = " + house.auto + ", format = " + format);
     if (house.test) {
-        var t = (Math.floor((new Date()).getTime() / 1000) >> 2) % 8;
+        var t = (Math.floor((new Date()).getTime() / 1000) >> 3) % 8;
         house.indoor = (t + 3) % 4 < 2;
         house.outdoor = ((t >> 1) + 3) % 4 < 2;
         house.random = (t >= 4);
